@@ -5,8 +5,7 @@
              x:Class="XAMLDemoProject.MainPage">
 
    <ContentPage.Content>
-        <StackLayout Margin="10, 20, 10, 10"
-                     CornerRadius ="5">
+        <StackLayout Margin="10, 20, 10, 10">
 
             <Entry x:Name="NameEntry"
                    Placeholder="" />
@@ -19,8 +18,12 @@
             <Button x:Name="GreetMeButton" 
                     Text="Say hello" 
                     Clicked="GreetMeButton_Clicked"
-                    HorizontalOptions ="LayoutOptions.Center"
+                    HorizontalOptions ="Center"
+                    CornerRadius ="5"
                     />
+
+            <Label x:Name="sliderValueLabel">Slider</Label>
+            <Slider ValueChanged="Slider_ValueChanged"></Slider>
         </StackLayout>
    </ContentPage.Content>
 
