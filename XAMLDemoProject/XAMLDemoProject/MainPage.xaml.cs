@@ -21,6 +21,14 @@ namespace XAMLDemoProject
             GreetingLabel.Text = greeting;
         }
 
+        private async void GridButton_Clicked(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            await DisplayAlert("Clicked", "Kliknuli ste gumb za prijelaz na drugu stranicu!", "OK");
+            Navigation.PushAsync(new GridDemoPage());
+        }
+
+
         private void Slider_ValueChanged(object sender, ValueChangedEventArgs e)
         {
             //sliderValueLabel.Text = e.NewValue.ToString();
