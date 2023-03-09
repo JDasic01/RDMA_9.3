@@ -20,5 +20,11 @@ namespace XAMLDemoProject
             string greeting = "Hello " + NameEntry.Text;
             GreetingLabel.Text = greeting;
         }
+
+        private void Slider_ValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            //sliderValueLabel.Text = e.NewValue.ToString();
+            sliderValueLabel.Text = ((Slider)sender).Value.ToString("F2");
+        }
     }
 }
