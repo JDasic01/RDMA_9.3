@@ -28,6 +28,7 @@ namespace XAMLDemoProject
             Navigation.PushAsync(new GridDemoPage());
         }
 
+
         private void Slider_ValueChanged(object sender, ValueChangedEventArgs e)
         {
             //sliderValueLabel.Text = e.NewValue.ToString();
