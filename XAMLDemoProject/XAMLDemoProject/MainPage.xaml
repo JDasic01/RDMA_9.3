@@ -21,6 +21,14 @@
                     Clicked="GreetMeButton_Clicked"
                     HorizontalOptions ="LayoutOptions.Center"
                     />
+
+            <Label x:Name="sliderValueLabel">Slider</Label>
+            <Slider ValueChanged="Slider_ValueChanged"></Slider>
+
+            <Button  x:Name ="GridButton"
+            Clicked="GridButton_Clicked"
+            Text = "Go to Demo Grid">
+            </Button>
         </StackLayout>
    </ContentPage.Content>
 
